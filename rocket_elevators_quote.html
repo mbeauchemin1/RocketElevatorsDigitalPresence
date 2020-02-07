@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevartors</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-6.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	
+		<style>.btn-warning{color:white; background-color:rgb(81, 81, 233);}
+            .btn-warning:hover {background-color:white !important;
+                                color:rgb(81, 81, 233) !important;}.btn-warning{border: 1px solid black !important}</style>
+	</head>
+
+
+	<link rel="icon" 
+		  type="image/png" 
+		  href="assets/images/favicon.png">
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation grain-blue">
+
+		<!-- SLIDE TOP -->
+		 <!-- <div id="slidetop">
+
+			<div class="container">
+				
+				<div class="row">
+
+					<div class="col-md-4">
+						<h6><i class="icon-heart"></i> WHY ?</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
+						<ul class="list-unstyled">
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+						<ul class="list-unstyled">
+							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
+							<li><b>Phone:</b> 1-800-565-2390</li>
+							<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>-->
+
+			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
+
+		</div>
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/REAssets/R2.png" alt="logo" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="#home">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="#work">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+
+
+
+       
+          	<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+			<section class="page-header">
+				<div class="container">
+
+					<h1>Get a quote</h1>
+
+					
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->
+
+				<div align="center">
+					<input type="button" class="btn btn-success" value="residential" onclick="showResidential()">
+					<input type="button" class="btn btn-success" value="commercial" onclick="showCommercial()">
+					<input type="button" class="btn btn-success" value="corporate" onclick='showCorporate()'>	
+					<input type="button" class="btn btn-success" value="hybrid" onclick='showHybrid()'>
+				</div>
+
+				<br>
+
+			<!-- residential quote -->
+
+			<div id="residential" style="display:none;">
+				<div align="center">
+					<label>number of apartments</label>
+					<input id="resNbApart" type="number" oninput="nbElevatorRes()" onkeyup="nbElevatorRes()">
+					<label>number of floors</label>
+					<input id="resNbFloors" type="number" oninput="nbElevatorRes()" onkeyup="nbElevatorRes()">
+					<label>number of basements</label>
+					<input id="resNbBase" type="number" oninput="nbElevatorRes()" onkeyup="nbElevatorRes()">
+				</div>
+				<hr>
+				<div align="center">
+					<label>recommended number of elevators</label>
+					<input id="resRecNbElevators" type="number" readonly>
+				</div>
+				<hr>
+				<div align="center">		
+					<form>
+						<input id="resStan" type="radio" name="product" value="standard" onclick="resPrice()"> standard <br>
+						<input id="resPrem" type="radio" name="product" value="premium" onclick="resPrice()"> premium<br>
+						<input id="resExel" type="radio" name="product" value="exelium" onclick="resPrice()"> exelium
+					</form>
+				</div>
+				<hr>
+				<div align="center">
+					<label>price for an elevator</label>
+					<input id="resPriceElevator" type="number" readonly>
+					<label>installation fee</label>
+					<input id="resInstalFee" type="number" readonly>
+					<label>installation total cost</label>
+					<input id="resTotal" type="number" readonly>
+				</div>
+			</div>
+
+
+			<!-- commercial quote -->
+
+			<div id="commercial" style="display:none;">
+				<div align="center">
+					<label>number of distinct businesses</label>
+					<input id="comNbbus" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<label>number of floors</label>
+					<input id="comNbFloors" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<label>number of basements</label>
+					<input id="comNbBase" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<label>number of parking</label>
+					<input id="comNbPark" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<label>number of elevator cages to be deployed</label>
+					<input id="comNbEle" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+				</div>
+				<hr>
+				<div align="center">
+					<label>recommended number of  elevators</label>
+					<input id='comRecNbElevators' type="number" readonly>
+				</div>
+				<hr>
+				<div align="center">		
+					<form>
+						<input id='comStan' type="radio" name="product" value="standard" onclick="comPrice()"> standard<br>
+						<input id='comPrem' type="radio" name="product" value="premium" onclick="comPrice()"> premium<br>
+						<input id='comExel' type="radio" name="product" value="exelium" onclick="comPrice()"> exelium
+					</form>
+				</div>
+				<hr>
+				<div align="center">
+					<label>price for an elevator</label>
+					<input id="comPriceElevator" type="number" readonly>
+					<label>installation fee</label>
+					<input id="comInstalFee" type="number" readonly>
+					<label>installation cost</label>
+					<input id="comTotal" type="number" readonly>
+				</div>
+			</div>
+
+
+			<!-- corporate quote -->
+
+			<div id='corporate' style='display:none;'>
+				<div align='center'>
+					<label>number of separate tenant companies</label>
+					<input id='corNbCom' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<label>number of floors</label>
+					<input id='corNbFloors' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<label>number of basements</label>
+					<input id='corNbBase' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<label>number of parking</label>
+					<input id='corNbPark' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<label> maximum number of occupants per floor</label>
+					<input id='corOccPerFloor' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+				</div>
+				<hr>
+				<div align="center">
+					<label>recommended number of  elevators</label>
+					<input id='corRecNbElevators' type="number" readonly>
+				</div>
+				<hr>
+				<div align="center">		
+					<form>
+						<input id='corStan' type="radio" name="product" value="standard" onclick='corPrice()'> standard<br>
+						<input id='corPrem' type="radio" name="product" value="premium" onclick='corPrice()'> premium<br>
+						<input id='corExel' type="radio" name="product" value="exelium" onclick='corPrice()'> exelium
+					</form>
+				</div>
+				<hr>
+				<div align="center">
+					<label>price for an elevator</label>
+					<input id="corPriceElevator" type="number" readonly>
+					<label>installation fee</label>
+					<input id="corInstalFee" type="number" readonly>
+					<label>installation cost</label>
+					<input id="corTotal" type="number" readonly>
+				</div>
+			</div>
+
+
+			<!-- hybrid quote -->
+
+			<div id="hybrid" style="display:none;">
+				<div align="center">
+					<label>number of distinct businesses</label>
+					<input id='hybNbBus' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<label>number of floors</label>
+					<input id='hybNbFloors' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<label>number of basements</label>
+					<input id='hybNbBase' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<label>number of parking</label>
+					<input id='hybNbPark' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<label>maximum number of occupants per floor</label>
+					<input id='hybOccPerFloor' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<label>number of hours of activity of the building</label>
+					<input id='hybNbHours' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+				</div>
+				<hr>
+				<div align="center">
+					<label>recommended number of  elevators</label>
+					<input id='hybRecNbElevators' type="number" readonly>
+				</div>
+				<hr>
+				<div align="center">		
+					<form>
+						<input id='hybStan' type="radio" name="product" value="standard" onclick='hybPrice()'> standard<br>
+						<input id='hybPrem' type="radio" name="product" value="premium" onclick='hybPrice()'> premium<br>
+						<input id='hybExel' type="radio" name="product" value="exelium" onclick='hybPrice()'> exelium
+					</form>
+				</div>
+				<hr>
+				<div align="center">
+					<label>price for an elevator</label>
+					<input id='hybPriceElevator' type="number" readonly>
+					<label>installation fee</label>
+					<input id='hybInstalFee' type="number" readonly>
+					<label>installation cost</label>
+					<input id='hybTotal' type='number' readonly>
+				</div>
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+
+
+
+            <!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								Our years of experience and our extensive list of clients makes us the right choice to meet your needs.
+							</p>
+							<h2>(581) 701-0303</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+					<!--	<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3> -->
+
+							<!-- Newsletter Form -->
+						<!--	<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form> -->
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<!--<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Rocket Elevators
+					</div>
+				</div>-->
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<!--<script async src="demo_files/styleswitcher/styleswitcher.js"></script>-->
+
+		<!-- REVOLUTION SLIDER -->
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+		-->
+		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+		<script src="assets/plugins/gmaps.js"></script>
+		<script>
+
+			jQuery(document).ready(function(){
+
+				/**
+					@BASIC GOOGLE MAP
+				**/
+				var map2 = new GMaps({
+					div: '#map2',
+					lat: -12.043333,
+					lng: -77.028333,
+					scrollwheel: false
+				});
+
+				var marker = map2.addMarker({
+					lat: -12.043333,
+					lng: -77.028333,
+					title: 'Company, Inc.'
+				});
+
+			});
+
+		</script>
+
+		
+
+		<!-- scripts pour selectionner type d,immeuble -->
+
+		<script>
+			function showResidential(){
+				document.getElementById('residential').style.display = 'block';
+				document.getElementById('commercial').style.display = 'none';
+				document.getElementById('corporate').style.display = 'none';
+				document.getElementById('hybrid').style.display = 'none';
+				}	
+		</script>
+
+		<script>
+			function showCommercial(){
+				document.getElementById('residential').style.display = 'none';
+				document.getElementById('commercial').style.display = 'block';
+				document.getElementById('corporate').style.display = 'none';
+				document.getElementById('hybrid').style.display = 'none';
+			}	
+		</script>
+
+		<script>
+			function showCorporate(){
+				document.getElementById('residential').style.display = 'none';
+				document.getElementById('commercial').style.display = 'none';
+				document.getElementById('corporate').style.display = 'block';
+				document.getElementById('hybrid').style.display = 'none';
+				
+			}	
+		</script>
+
+		<script>
+			function showHybrid(){
+				document.getElementById('residential').style.display = 'none';
+				document.getElementById('commercial').style.display = 'none';
+				document.getElementById('corporate').style.display = 'none';
+				document.getElementById('hybrid').style.display = 'block';
+			}	
+		</script>
+		
+
+		<!-- script nb elevators residential -->
+		<script>
+			function nbElevatorRes() {			
+				var a = document.getElementById("resNbApart").value
+				var b = document.getElementById("resNbFloors").value
+				var c = a / b
+				var d = c / 6
+				var e = Math.ceil(d)
+				var f = Math.ceil(b / 20)
+				var g = e * f
+	
+				document.getElementById('resRecNbElevators').value = g;
+			}
+		</script>
+		<!-- script price residential -->	
+		<script>
+			function resPrice() {
+				if (document.getElementById('resStan').checked) {
+					var a = document.getElementById("resRecNbElevators").value
+					var b = a * 7565
+					var c = b * .1
+					var d = b + c
+					document.getElementById('resPriceElevator').value = b.toFixed(2);
+					document.getElementById('resInstalFee').value = c.toFixed(2);
+					document.getElementById('resTotal').value = d.toFixed(2);
+				}
+
+				if (document.getElementById('resPrem').checked) {
+					var a = document.getElementById("resRecNbElevators").value
+					var b = a * 12345
+					var c = b * .13
+					var d = b + c
+					document.getElementById('resPriceElevator').value = b.toFixed(2);
+					document.getElementById('resInstalFee').value = c.toFixed(2);
+					document.getElementById('resTotal').value = d.toFixed(2);
+				}
+
+				if (document.getElementById('resExel').checked) {
+					var a = document.getElementById("resRecNbElevators").value
+					var b = a * 15400
+					var c = b * .16
+					var d = b + c
+					document.getElementById('resPriceElevator').value = b.toFixed(2);
+					document.getElementById('resInstalFee').value = c.toFixed(2);
+					document.getElementById('resTotal').value = d.toFixed(2);
+				}
+			}		
+		</script>
+
+		<!-- script nb elevators commercial -->
+		<script>
+			function nbElevatorCom() {
+				var a = document.getElementById("comNbEle").value
+				var b = a
+				document.getElementById('comRecNbElevators').value = b;
+			}
+		</script>
+		<!-- script price commercial -->
+		<script>
+			function comPrice() {
+				if (document.getElementById('comStan').checked) {
+					var a = document.getElementById('comRecNbElevators').value
+					var b = a * 7565
+					var c = b * .1
+					var d = b + c
+					document.getElementById('comPriceElevator').value = b.toFixed(2);
+					document.getElementById('comInstalFee').value = c.toFixed(2);
+					document.getElementById('comTotal').value = d.toFixed(2);
+				}
+				if (document.getElementById('comPrem').checked) {
+					var a = document.getElementById('comRecNbElevators').value
+					var b = a * 12345
+					var c = b * .13
+					var d = b + c
+					document.getElementById('comPriceElevator').value = b.toFixed(2);
+					document.getElementById('comInstalFee').value = c.toFixed(2);
+					document.getElementById('comTotal').value = d.toFixed(2);
+				}
+				if (document.getElementById('comExel').checked) {
+					var a = document.getElementById('comRecNbElevators').value
+					var b = a * 15400
+					var c = b * .16
+					var d = b + c
+					document.getElementById('comPriceElevator').value = b.toFixed(2);
+					document.getElementById('comInstalFee').value = c.toFixed(2);
+					document.getElementById('comTotal').value = d.toFixed(2);
+				}
+			}
+		</script>
+
+		<!-- script nb elevator corporate -->
+		<script>
+			function nbElevatorCor() {
+				var occFloor = document.getElementById('corOccPerFloor').value
+				var nbFloors = document.getElementById('corNbFloors').value
+				var nbBase = document.getElementById('corNbBase').value
+				var totOcc = (+nbFloors + +nbBase) * occFloor
+				var nbEle = totOcc / 1000
+				var column = (+nbFloors + +nbBase) / 20
+				var a = Math.ceil(column)
+				var b = nbEle / column
+				var c = Math.ceil(b)
+				var totEle = a * c
+
+				document.getElementById('corRecNbElevators').value = totEle;		
+			}
+		</script>
+		<!-- script price corporate-->
+		<script>
+			function corPrice() {
+				if (document.getElementById('corStan').checked) {
+					var a = document.getElementById('corRecNbElevators').value
+					var b = a * 7565
+					var c = b * .1
+					var d = b + c
+					document.getElementById('corPriceElevator').value = b.toFixed(2);
+					document.getElementById('corInstalFee').value = c.toFixed(2);
+					document.getElementById('corTotal').value = d.toFixed(2);
+				}
+				if (document.getElementById('corPrem').checked) {
+					var a = document.getElementById('corRecNbElevators').value
+					var b = a * 12345
+					var c = b * .13
+					var d = b + c
+					document.getElementById('corPriceElevator').value = b.toFixed(2);
+					document.getElementById('corInstalFee').value = c.toFixed(2);
+					document.getElementById('corTotal').value = d.toFixed(2);
+				}
+				if (document.getElementById('corExel').checked) {
+					var a = document.getElementById('corRecNbElevators').value
+					var b = a * 15400
+					var c = b * .16
+					var d = b + c
+					document.getElementById('corPriceElevator').value = b.toFixed(2);
+					document.getElementById('corInstalFee').value = c.toFixed(2);
+					document.getElementById('corTotal').value = d.toFixed(2);
+				}
+			}
+		</script>
+
+		<!-- script nb elevator hybride -->
+		<script>
+			function nbElevatorHyb() {
+				var occFloor = document.getElementById('hybOccPerFloor').value
+				var nbFloors = document.getElementById('hybNbFloors').value
+				var nbBase = document.getElementById('hybNbBase').value
+				var totOcc = (+nbFloors + +nbBase) * occFloor
+				var nbEle = totOcc / 1000
+				var column = (+nbFloors + +nbBase) / 20
+				var a = Math.ceil(column)
+				var b = nbEle / column
+				var c = Math.ceil(b)
+				var totEle = a * c
+
+				document.getElementById('hybRecNbElevators').value = totEle;		
+			}
+		</script>
+		<!-- script price hybrid-->
+		<script>
+			function hybPrice() {
+				if (document.getElementById('hybStan').checked) {
+					var a = document.getElementById('hybRecNbElevators').value
+					var b = a * 7565
+					var c = b * .1
+					var d = b + c
+					document.getElementById('hybPriceElevator').value = b.toFixed(2);
+					document.getElementById('hybInstalFee').value = c.toFixed(2);
+					document.getElementById('hybTotal').value = d.toFixed(2);
+			}
+				if (document.getElementById('hybPrem').checked) {
+					var a = document.getElementById('hybRecNbElevators').value
+					var b = a * 12345
+					var c = b * .13
+					var d = b + c
+					document.getElementById('hybPriceElevator').value = b.toFixed(2);
+					document.getElementById('hybInstalFee').value = c.toFixed(2);
+					document.getElementById('hybTotal').value = d.toFixed(2);
+			}
+				if (document.getElementById('hybExel').checked) {
+					var a = document.getElementById('hybRecNbElevators').value
+					var b = a * 15400
+					var c = b * .16
+					var d = b + c
+					document.getElementById('hybPriceElevator').value = b.toFixed(2);
+					document.getElementById('hybInstalFee').value = c.toFixed(2);
+					document.getElementById('hybTotal').value = d.toFixed(2);
+				}
+			}
+		</script>	
+
+	</body>
+</html>
+
