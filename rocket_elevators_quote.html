@@ -28,20 +28,37 @@
 		<link href="assets/css/header-6.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
 	
-		<style>.btn-warning{color:white; background-color:rgb(81, 81, 233);}
+		<!--<style>.btn-warning{color:white; background-color:rgb(81, 81, 233);}
             .btn-warning:hover {background-color:white !important;
-                                color:rgb(81, 81, 233) !important;}.btn-warning{border: 1px solid black !important}</style>
+                                color:rgb(81, 81, 233) !important;}.btn-warning{border: 1px solid black !important}</style>-->
 	</head>
-<!--
+
 	<style>
-		input:focus {
- 		 background-color:blueviolet;
+		.onFocus:focus {
+			background-color: rgb(100, 160, 185);
+		}
+
+		.button {
+			padding: 16px 32px;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: .6s;
+			cursor: pointer;
+		}
+
+		.button {
+  			background-color: white; 
+			color: black; 
+			border: 2px solid rgb(100, 160, 185);
+		}
+
+		.button:hover {
+			background-color: rgb(100, 160, 185);
+			color: white;
 		}
 
 	</style>
-	
--->
-
 
 	<link rel="icon" 
 		  type="image/png" 
@@ -68,7 +85,7 @@
 		BACKGROUND IMAGE [together with .boxed class]
 		data-background="assets/images/_smarty/boxed_background/1.jpg"
 	-->
-	<body class="smoothscroll enable-animation grain-blue">
+	<!--<body class="smoothscroll enable-animation grain-blue">-->
 
 		<!-- SLIDE TOP -->
 		 <!-- <div id="slidetop">
@@ -247,29 +264,29 @@
 			<!-- /PAGE HEADER -->
 
 				<div align="center">
-					<input type="button" class="btn btn-success" value="residential" onclick="showResidential()">
-					<input type="button" class="btn btn-success" value="commercial" onclick="showCommercial()">
-					<input type="button" class="btn btn-success" value="corporate" onclick='showCorporate()'>	
-					<input type="button" class="btn btn-success" value="hybrid" onclick='showHybrid()'>
+					<input type="button" class="button" value="residential" onclick="showResidential()">
+					<input type="button" class="button" value="commercial" onclick="showCommercial()">
+					<input type="button" class="button" value="corporate" onclick='showCorporate()'>	
+					<input type="button" class="button" value="hybrid" onclick='showHybrid()'>
 				</div>
 
 				<br>
 
 			<!-- residential quote -->
-
+		
 			<div id="residential" style="display:none;">
 				<div align="center">
 					<label>number of apartments</label>
-					<input id="resNbApart" type="number" oninput="nbElevatorRes()">
+					<input class="onFocus" id="resNbApart" type="number" oninput="nbElevatorRes()">
 					<label>number of floors</label>
-					<input id="resNbFloors" type="number" oninput="nbElevatorRes()">
+					<input class="onFocus" id="resNbFloors" type="number" oninput="nbElevatorRes()">
 					<label>number of basements</label>
-					<input id="resNbBase" type="number" oninput="nbElevatorRes()">
+					<input class="onFocus" id="resNbBase" type="number" oninput="nbElevatorRes()">
 				</div>
 				<hr>
 				<div align="center">
 					<label>recommended number of elevators</label>
-					<input id="resRecNbElevators" type="number" readonly>
+					<input class="onFocus" id="resRecNbElevators" type="number" readonly>
 				</div>
 				<hr>
 				<div align="center">		
@@ -289,22 +306,22 @@
 					<input id="resTotal" type="number" readonly>
 				</div>
 			</div>
-
+		
 
 			<!-- commercial quote -->
-
+		
 			<div id="commercial" style="display:none;">
 				<div align="center">
 					<label>number of distinct businesses</label>
-					<input id="comNbbus" type="number" oninput="nbElevatorCom()">
+					<input class="onFocus" id="comNbbus" type="number" oninput="nbElevatorCom()">
 					<label>number of floors</label>
-					<input id="comNbFloors" type="number" oninput="nbElevatorCom()">
+					<input class="onFocus" id="comNbFloors" type="number" oninput="nbElevatorCom()">
 					<label>number of basements</label>
-					<input id="comNbBase" type="number" oninput="nbElevatorCom()">
+					<input class="onFocus" id="comNbBase" type="number" oninput="nbElevatorCom()">
 					<label>number of parking</label>
-					<input id="comNbPark" type="number" oninput="nbElevatorCom()">
+					<input class="onFocus" id="comNbPark" type="number" oninput="nbElevatorCom()">
 					<label>number of elevator cages to be deployed</label>
-					<input id="comNbEle" type="number" oninput="nbElevatorCom()">
+					<input class="onFocus" id="comNbEle" type="number" oninput="nbElevatorCom()">
 				</div>
 				<hr>
 				<div align="center">
@@ -329,22 +346,22 @@
 					<input id="comTotal" type="number" readonly>
 				</div>
 			</div>
-
+		
 
 			<!-- corporate quote -->
-
+		
 			<div id='corporate' style='display:none;'>
 				<div align='center'>
 					<label>number of separate tenant companies</label>
-					<input id='corNbCom' type="number" oninput='nbElevatorCor()'>
+					<input class="onFocus" id='corNbCom' type="number" oninput='nbElevatorCor()'>
 					<label>number of floors</label>
-					<input id='corNbFloors' type="number" oninput='nbElevatorCor()'>
+					<input class="onFocus" id='corNbFloors' type="number" oninput='nbElevatorCor()'>
 					<label>number of basements</label>
-					<input id='corNbBase' type="number" oninput='nbElevatorCor()'>
+					<input class="onFocus" id='corNbBase' type="number" oninput='nbElevatorCor()'>
 					<label>number of parking</label>
-					<input id='corNbPark' type="number" oninput='nbElevatorCor()'>
+					<input class="onFocus" id='corNbPark' type="number" oninput='nbElevatorCor()'>
 					<label> maximum number of occupants per floor</label>
-					<input id='corOccPerFloor' type="number" oninput='nbElevatorCor()'>
+					<input class="onFocus" id='corOccPerFloor' type="number" oninput='nbElevatorCor()'>
 				</div>
 				<hr>
 				<div align="center">
@@ -369,24 +386,24 @@
 					<input id="corTotal" type="number" readonly>
 				</div>
 			</div>
-
+		
 
 			<!-- hybrid quote -->
-
+		
 			<div id="hybrid" style="display:none;">
 				<div align="center">
 					<label>number of distinct businesses</label>
-					<input id='hybNbBus' type="number" oninput='nbElevatorHyb()'>
+					<input class="onFocus" id='hybNbBus' type="number" oninput='nbElevatorHyb()'>
 					<label>number of floors</label>
-					<input id='hybNbFloors' type="number" oninput='nbElevatorHyb()'>
+					<input class="onFocus" id='hybNbFloors' type="number" oninput='nbElevatorHyb()'>
 					<label>number of basements</label>
-					<input id='hybNbBase' type="number" oninput='nbElevatorHyb()'>
+					<input class="onFocus" id='hybNbBase' type="number" oninput='nbElevatorHyb()'>
 					<label>number of parking</label>
-					<input id='hybNbPark' type="number" oninput='nbElevatorHyb()'>
+					<input class="onFocus" id='hybNbPark' type="number" oninput='nbElevatorHyb()'>
 					<label>maximum number of occupants per floor</label>
-					<input id='hybOccPerFloor' type="number" oninput='nbElevatorHyb()'>
+					<input class="onFocus" id='hybOccPerFloor' type="number" oninput='nbElevatorHyb()'>
 					<label>number of hours of activity of the building</label>
-					<input id='hybNbHours' type="number" oninput='nbElevatorHyb()'>
+					<input class="onFocus" id='hybNbHours' type="number" oninput='nbElevatorHyb()'>
 				</div>
 				<hr>
 				<div align="center">
@@ -411,7 +428,7 @@
 					<input id='hybTotal' type='number' readonly>
 				</div>
 			</div>
-
+		
 			<br>
 			<br>
 			<br>
