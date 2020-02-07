@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Rocket Elevartors</title>
+		<title>Rocket Elevators</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
@@ -32,7 +32,7 @@
             .btn-warning:hover {background-color:white !important;
                                 color:rgb(81, 81, 233) !important;}.btn-warning{border: 1px solid black !important}</style>
 	</head>
-
+<!--
 	<style>
 		input:focus {
  		 background-color:blueviolet;
@@ -40,6 +40,7 @@
 
 	</style>
 	
+-->
 
 
 	<link rel="icon" 
@@ -256,14 +257,14 @@
 
 			<!-- residential quote -->
 
-			<div id="residential" class="residential" style="display:none;">
+			<div id="residential" style="display:none;">
 				<div align="center">
 					<label>number of apartments</label>
-					<input id="resNbApart" type="number" oninput="nbElevatorRes()" onkeyup="nbElevatorRes()">
+					<input id="resNbApart" type="number" oninput="nbElevatorRes()">
 					<label>number of floors</label>
-					<input id="resNbFloors" type="number" oninput="nbElevatorRes()" onkeyup="nbElevatorRes()">
+					<input id="resNbFloors" type="number" oninput="nbElevatorRes()">
 					<label>number of basements</label>
-					<input id="resNbBase" type="number" oninput="nbElevatorRes()" onkeyup="nbElevatorRes()">
+					<input id="resNbBase" type="number" oninput="nbElevatorRes()">
 				</div>
 				<hr>
 				<div align="center">
@@ -295,15 +296,15 @@
 			<div id="commercial" style="display:none;">
 				<div align="center">
 					<label>number of distinct businesses</label>
-					<input id="comNbbus" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<input id="comNbbus" type="number" oninput="nbElevatorCom()">
 					<label>number of floors</label>
-					<input id="comNbFloors" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<input id="comNbFloors" type="number" oninput="nbElevatorCom()">
 					<label>number of basements</label>
-					<input id="comNbBase" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<input id="comNbBase" type="number" oninput="nbElevatorCom()">
 					<label>number of parking</label>
-					<input id="comNbPark" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<input id="comNbPark" type="number" oninput="nbElevatorCom()">
 					<label>number of elevator cages to be deployed</label>
-					<input id="comNbEle" type="number" oninput="nbElevatorCom()" onkeyup="nbElevatorCom()">
+					<input id="comNbEle" type="number" oninput="nbElevatorCom()">
 				</div>
 				<hr>
 				<div align="center">
@@ -335,15 +336,15 @@
 			<div id='corporate' style='display:none;'>
 				<div align='center'>
 					<label>number of separate tenant companies</label>
-					<input id='corNbCom' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<input id='corNbCom' type="number" oninput='nbElevatorCor()'>
 					<label>number of floors</label>
-					<input id='corNbFloors' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<input id='corNbFloors' type="number" oninput='nbElevatorCor()'>
 					<label>number of basements</label>
-					<input id='corNbBase' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<input id='corNbBase' type="number" oninput='nbElevatorCor()'>
 					<label>number of parking</label>
-					<input id='corNbPark' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<input id='corNbPark' type="number" oninput='nbElevatorCor()'>
 					<label> maximum number of occupants per floor</label>
-					<input id='corOccPerFloor' type="number" oninput='nbElevatorCor()' onkeyup='nbElevatorCor()'>
+					<input id='corOccPerFloor' type="number" oninput='nbElevatorCor()'>
 				</div>
 				<hr>
 				<div align="center">
@@ -375,17 +376,17 @@
 			<div id="hybrid" style="display:none;">
 				<div align="center">
 					<label>number of distinct businesses</label>
-					<input id='hybNbBus' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<input id='hybNbBus' type="number" oninput='nbElevatorHyb()'>
 					<label>number of floors</label>
-					<input id='hybNbFloors' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<input id='hybNbFloors' type="number" oninput='nbElevatorHyb()'>
 					<label>number of basements</label>
-					<input id='hybNbBase' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<input id='hybNbBase' type="number" oninput='nbElevatorHyb()'>
 					<label>number of parking</label>
-					<input id='hybNbPark' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<input id='hybNbPark' type="number" oninput='nbElevatorHyb()'>
 					<label>maximum number of occupants per floor</label>
-					<input id='hybOccPerFloor' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<input id='hybOccPerFloor' type="number" oninput='nbElevatorHyb()'>
 					<label>number of hours of activity of the building</label>
-					<input id='hybNbHours' type="number" oninput='nbElevatorHyb()' onkeyup='nbElevatorHyb()'>
+					<input id='hybNbHours' type="number" oninput='nbElevatorHyb()'>
 				</div>
 				<hr>
 				<div align="center">
